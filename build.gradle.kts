@@ -44,6 +44,14 @@ dependencies {
     testImplementation("org.springframework.security:spring-security-test")
 }
 
+tasks.bootJar {
+    archiveClassifier.set("boot")
+}
+
+tasks.jar {
+    archiveClassifier.set("")
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
 }
