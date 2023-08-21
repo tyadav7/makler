@@ -21,14 +21,6 @@ repositories {
     mavenCentral()
 }
 
-tasks {
-    withType<Jar> {
-        manifest {
-            attributes["Main-Class"] = "com.makler.platform.MaklerApplication"
-        }
-    }
-}
-
 dependencies {
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
